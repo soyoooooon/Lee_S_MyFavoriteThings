@@ -5,7 +5,7 @@
     const myImages = document.querySelector("#Images");
     const tButtons = document.querySelectorAll(".true-link");
     const textInfo = document.querySelector(".thingsP");
-    const stuButton = document.querySelectorAll(".tryB");
+    // const stuButton = document.querySelectorAll(".tryB");
 
     function carousel(){
 
@@ -16,29 +16,36 @@
 //debugger;
 
 
-function getUserData(){
-    //event.preventDefault();
-    //I only got the link;(
+function getUserData(data){
+    event.preventDefault();
+  
  
     let url = `/${this.getAttribute('href')}`;
+    
     console.log(data);
+    //I got Data is not defined here...
 
     fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
+     .then(res => res.json())
+     .then(data => {
         
         tryData(data);
+
+
     })
-    
+    .catch((err) => console.log(err));
    
 };
 
-    function tryData(things){
-        let whatAmIdo = `<p>${things.info}</p><p><br>Can I ask why I got wrong here?</p>`;
-       textInfo.innerHTML = whatAmIdo;
-
-       debugger;
+    function tryData(stuff){
+        let whatIdo = `<p>${stuff.proID}</p>
+                        <P><br>${stuff.this}</p>
+                        <p><br>${stuff.info}</p>
+                        <p><br>Cost: ${stuff.cost}</p>
+                        <p><br>${stuff.happiness}</p>`;
+            textInfo.innerHTML = whatIdo;
+           
+       
 
     };
 
@@ -47,5 +54,5 @@ function getUserData(){
 
     tButtons.forEach(button => button.addEventListener("click" , getUserData ));
 
-    stuButton.forEach(button =>button.addEventListener("click",tryData));
+    // stuButton.forEach(button =>button.addEventListener("click",tryData));
 })();
