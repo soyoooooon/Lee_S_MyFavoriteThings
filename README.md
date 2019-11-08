@@ -11,9 +11,11 @@
 
 * Node.JS (NPM package)
 * PHP myAdmin
-* HTML5 & SASS 
+* mysql
+* HTML & SASS 
 * Javascript 
+ 
 
 
 ### Personal
-* Tried to understand first before I actually write any code, it took a time to get it. it supposed to be responsive, but It's not a responsive application by my wrong decision. But I figured out the error just nick of time.
+  * Tried to understand first before I actually write any code, it took a time to get it. it supposed to be responsive, but It's not a responsive application by my wrong decision. But I figured out the error just nick of time.
