@@ -1,0 +1,30 @@
+
+<section id="cont">
+    <div id="Images"  style="right: 0;">
+    <img src="images/cat.jpg" alt="cat">
+    <img src="images/bedroom.jpg" alt="bedroom">
+    <img src="images/sleeping.jpg" alt="sleep">
+    </div>
+    </section>
+    
+    <section id="nav">
+        <button class="button cat" data-offset="0">1</button>
+        <button class="button room" data-offset="1">2</button>
+        <button class="button sleep" data-offset="2">3</button>
+    </section>
+   
+     <div class="things">
+        
+        {{#each things}}
+        <button class="tryB">BUTTON</button>
+       
+        <a href="users/{{ID}}" class="true-link">Comforts</a>
+       
+
+        
+        
+      {{/each}}  
+
+       <p class="thingsP"></p>
+    </div>
+
