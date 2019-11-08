@@ -1,6 +1,6 @@
 # My favorit things
 
-### Using node.js, creating a data, getting a route, and making that dynamic
+#### Using node.js,mysql creating a data, getting a route, and making that dynamic.
 
 ## Authors 
 
@@ -13,3 +13,7 @@
 * PHP myAdmin
 * HTML5 & SASS 
 * Javascript 
+
+
+### Personal
+* Tried to understand first before I actually write any code, it took a time to get it. it supposed to be responsive, but It's not a responsive application by my wrong decision. But I figured out the error just nick of time.
